@@ -14,10 +14,18 @@ class CalculatorTest {
         assertEquals(10, calculator.add(4, 6));
 
     }
+
     @Test
     @DisplayName("Test Addition 8 + 9 = 10")
     public void testAddition2(){
         assertEquals(17, calculator.add(8, 9));
+
+    }
+
+    @Test
+    @DisplayName("Test Addition 4 + 6 = 10")
+    public void testAddition3_fail(){
+        assertEquals(10, calculator.add(40, 6));
 
     }
 
